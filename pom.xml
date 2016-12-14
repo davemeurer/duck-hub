@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>blackducksoftware</groupId>
   <artifactId>duck-hub</artifactId>
-  <version>1.0</version>
+  <version>2.0</version>
   <packaging>war</packaging>
   <name>Duck Hub Demo</name>
   <organization>
@@ -12,13 +12,144 @@
 	
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
+		<org.springframework-version>3.0.0.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 	</properties>
 
 
 	<dependencies>
+
+		<dependency>
+			<groupId>jep</groupId>
+			<artifactId>jep</artifactId>
+			<version>2.24</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.neethi</groupId>
+		    <artifactId>neethi</artifactId>
+		    <version>2.0.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.jasypt</groupId>
+		    <artifactId>jasypt</artifactId>
+		    <version>1.9.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.jboss.spec.javax.transaction</groupId>
+		    <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+		    <version>1.0.1.Final</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>opensymphony</groupId>
+		    <artifactId>sitemesh</artifactId>
+		    <version>2.4.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.8</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>8.3-603.jdbc3</version>
+		</dependency>
+	
+		
+		<!-- struts -->
+		<!-- -->
+		<dependency>
+		    <groupId>org.apache.struts</groupId>
+		    <artifactId>struts2-core</artifactId>
+		    <version>2.3.7</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>jetty</groupId>
+		    <artifactId>jetty</artifactId>
+		    <version>6.0.1</version>
+		</dependency>
+		
+		
+		<!-- Grizzly -->
+		<dependency>
+		    <groupId>com.sun.grizzly</groupId>
+		    <artifactId>grizzly-framework</artifactId>
+		    <version>1.9.14</version>
+		</dependency>
+		
+		<!-- Spring -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>3.0.0.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-core-asl</artifactId>
+		    <version>1.9.10</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-mapper-asl</artifactId>
+		    <version>1.9.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>11.0.2</version>
+		</dependency>
+		
+		
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.2.5</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpcore</artifactId>
+		    <version>4.2.5</version>
+		</dependency>
 
 
 
@@ -139,8 +270,8 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<plugins>
-		<plugin>
+		<plugins>	
+			<plugin>
                <groupId>com.blackducksoftware.integration</groupId>
                <artifactId>hub-maven-plugin</artifactId>
                <version>1.0.4</version>
@@ -165,6 +296,7 @@
                    </execution>
                </executions>
             </plugin>
+		
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
@@ -224,7 +356,7 @@
 			<plugins>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->
-				<!--<plugin>
+			<!--	<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
@@ -255,7 +387,7 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>-->
+				</plugin> -->
 			</plugins>
 		</pluginManagement>		
 	</build>
