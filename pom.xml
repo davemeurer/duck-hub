@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>blackducksoftware</groupId>
   <artifactId>duck-hub</artifactId>
-  <version>3.0</version>
+  <version>2.0</version>
   <packaging>war</packaging>
   <name>Duck Hub Demo</name>
   <organization>
@@ -12,7 +12,7 @@
 	
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>4.3.1.RELEASE</org.springframework-version>
+		<org.springframework-version>3.0.0.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 	</properties>
@@ -29,7 +29,7 @@
 		<dependency>
 		    <groupId>org.apache.neethi</groupId>
 		    <artifactId>neethi</artifactId>
-		    <version>3.0.3</version>
+		    <version>2.0.4</version>
 		</dependency>
 		
 		<dependency>
@@ -53,7 +53,7 @@
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
 		    <artifactId>poi</artifactId>
-		    <version>3.14</version>
+		    <version>3.8</version>
 		</dependency>
 		
 		<dependency>
@@ -68,16 +68,15 @@
 		<dependency>
 		    <groupId>org.apache.struts</groupId>
 		    <artifactId>struts2-core</artifactId>
-		    <version>2.3.31</version>
+		    <version>2.3.7</version>
 		</dependency>
 		
 		<dependency>
-		    <groupId>org.eclipse.jetty</groupId>
-		    <artifactId>jetty-server</artifactId>
-		    <version>7.1.0.v20100505</version>
+		    <groupId>jetty</groupId>
+		    <artifactId>jetty</artifactId>
+		    <version>6.0.1</version>
 		</dependency>
 		
-	
 		
 		<!-- Grizzly -->
 		<dependency>
@@ -109,11 +108,10 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
 		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-core</artifactId>
-		    <version>4.1.1.RELEASE</version>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>3.0.0.RELEASE</version>
 		</dependency>
 		
 		<dependency>
@@ -131,7 +129,7 @@
 		<dependency>
 			<groupId>xalan</groupId>
 			<artifactId>xalan</artifactId>
-			<version>2.7.2</version>
+			<version>2.7.1</version>
 		</dependency>
 		
 		<dependency>
@@ -144,13 +142,13 @@
 		<dependency>
 		    <groupId>org.apache.httpcomponents</groupId>
 		    <artifactId>httpclient</artifactId>
-		    <version>4.4.1</version>
+		    <version>4.2.5</version>
 		</dependency>
 		
 		<dependency>
 		    <groupId>org.apache.httpcomponents</groupId>
 		    <artifactId>httpcore</artifactId>
-		    <version>4.4.5</version>
+		    <version>4.2.5</version>
 		</dependency>
 
 
@@ -236,13 +234,13 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.0.10.Final</version>
+			<version>4.1.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.2.4.Final</version>
+			<version>4.1.0.Final</version>
 		</dependency>
 
 		<dependency>
@@ -272,8 +270,8 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<plugins>
-		<plugin>
+		<plugins>	
+			<plugin>
                <groupId>com.blackducksoftware.integration</groupId>
                <artifactId>hub-maven-plugin</artifactId>
                <version>1.4.0</version>
@@ -291,6 +289,7 @@
                    </execution>
                </executions>
             </plugin>
+		
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
@@ -350,7 +349,7 @@
 			<plugins>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->
-				<!--<plugin>
+			<!--	<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
@@ -381,7 +380,7 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>-->
+				</plugin> -->
 			</plugins>
 		</pluginManagement>		
 	</build>
