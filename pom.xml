@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>blackducksoftware</groupId>
   <artifactId>duck-hub</artifactId>
-  <version>3.0</version>
+  <version>3.1</version>
   <packaging>war</packaging>
   <name>Duck Hub Demo</name>
   <organization>
