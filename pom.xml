@@ -37,7 +37,8 @@
 		<dependency>
 		    <groupId>org.jasypt</groupId>
 		    <artifactId>jasypt</artifactId>
-		    <version>1.9.1</version>
+		    <version>1.9.2</version>
+		    <!-- 1.9.1 -->
 		</dependency>
 		
 		<dependency>
@@ -116,7 +117,7 @@
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-core</artifactId>
-		    <version>4.1.1.RELEASE</version>
+		    <version>4.2.3.RELEASE</version>
 		</dependency>
 		
 		<dependency>
