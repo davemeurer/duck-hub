@@ -12,8 +12,9 @@
 	
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>4.3.11.RELEASE</org.springframework-version>
+		<org.springframework-version>4.2.1.RELEASE</org.springframework-version>
 		<!-- 4.2.1.RELEASE -->
+		<!-- 4.3.11.RELEASE -->
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<hub.project.name>Duck Hub Demo</hub.project.name>
@@ -38,7 +39,7 @@
 		    <groupId>org.jasypt</groupId>
 		    <artifactId>jasypt</artifactId>
 		    <version>1.9.2</version>
-		    <!-- 1.9.1 -->
+		    <!-- 1.9.1 1.9.2 -->
 		</dependency>
 		
 		<dependency>
@@ -71,8 +72,8 @@
 		<dependency>
 		    <groupId>org.apache.struts</groupId>
 		    <artifactId>struts2-core</artifactId>
-		    <version>2.3.34</version>
-		    <!-- 2.3.7 -->
+		    <version>2.3.7</version>
+		    <!-- 2.3.7 34 -->
 		</dependency>
 		
 		<dependency>
