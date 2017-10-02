@@ -1,1 +1,1 @@
-Demo the GitHub Black Duck integration, take 1
+Demo the GitHub Black Duck integration, take 2
