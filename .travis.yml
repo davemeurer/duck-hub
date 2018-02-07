@@ -6,5 +6,5 @@ jdk:
 install: true
 script:
   - mvn clean package
-  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=$BIZDEV_HUB_SERVER --blackduck.hub.username=$BIZDEV_HUB_USER --blackduck.hub.password=$BIZDEV_HUB_PWD --blackduck.hub.auto.import.cert=true --detect.policy.check=true
+  - bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url=$BIZDEV_HUB_SERVER --blackduck.hub.username=$BIZDEV_HUB_USER --blackduck.hub.password=$BIZDEV_HUB_PWD --blackduck.hub.auto.import.cert=true --detect.policy.check=true --detect.project.name=""Black Ducky Demo""
 
