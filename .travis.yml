@@ -12,7 +12,7 @@ script:
               --blackduck.hub.password=$BIZDEV_HUB_PWD 
               --blackduck.hub.auto.import.cert=true 
               --detect.policy.check=true 
-              --detect.project.name=Black\ Ducky\ Demo 
+              --detect.project.name="Black Ducky Demo" 
               --detect.project.codelocation.prefix="travis-ci"
-              --detect.default.project.version.scheme=timestamp
+              --detect.project.version.name="Build $TRAVIS_BUILD_NUMBER"
 
